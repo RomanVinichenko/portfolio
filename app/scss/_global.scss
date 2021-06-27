@@ -18,12 +18,10 @@ body {
 }
 
 .title {
-  display: inline-block;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
   font-size: 35px;
+  text-align: center;
   color: $bl;
-  border-bottom: 1px solid $accent;
-
 }
 
 .btn {
