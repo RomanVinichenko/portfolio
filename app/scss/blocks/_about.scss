@@ -1,0 +1,55 @@
+.about {
+  padding: 60px 0;
+  background-color: $wh;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0;
+    color: $text;
+  }
+
+  &__img {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  &__info {
+    max-width: 450px;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  &__advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &__advantage {
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+  }
+
+  &__years {
+    font-weight: 700;
+    font-size: 38px;
+  }
+
+  &__btn {
+    max-width: 130px;
+    color: $wh;
+    background-color: $accent;
+
+    &:hover {
+      border: 3px solid $accent;
+      color: $accent;
+      background-color: $wh;
+    }
+  }
+}
