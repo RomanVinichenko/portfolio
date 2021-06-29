@@ -20,7 +20,8 @@
 
   &__text {
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
   }
 
   &__advantages {
@@ -41,7 +42,6 @@
   }
 
   &__btn {
-    max-width: 130px;
     color: $wh;
     background-color: $accent;
 

@@ -1,0 +1,47 @@
+.portfolio {
+  padding: 80px 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0;
+  }
+
+  &__info {
+    max-width: 320px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text;
+  }
+
+  &__img {
+    max-width: 600px;
+    border-radius: 10px;
+  }
+
+  &__btn {
+    color: $wh;
+    background-color: $accent;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      border: 3px solid $accent;
+      color: $accent;
+      background-color: $wh;
+    }
+  }
+}

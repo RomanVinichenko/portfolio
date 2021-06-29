@@ -1,0 +1,123 @@
+.contact {
+  padding: 80px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+  }
+
+  &__info {
+    max-width: 500px;
+    font-style: normal;
+  }
+
+  &__block {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+    }
+  }
+
+  &__block--phone {
+    &::before {
+      background-image: url("../../images/phone.svg");
+    }
+  }
+
+  &__block--mail {
+    &::before {
+      background-image: url("../../images/mail.svg");
+    }
+  }
+
+  &__block--location {
+    &::before {
+      background-image: url("../../images/location.svg");
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    display: block;
+    margin-top: 10px;
+    width: 250px;
+    outline: none;
+    border: none;
+    background-color: #d7d7e8;
+  }
+
+  &__textarea {
+    height: 230px;
+  }
+
+  &__message {
+    resize: none;
+  }
+
+  &__btn {
+    color: #fff;
+    background-color: $accent;
+
+    &:hover {
+      border: 3px solid $accent;
+      color: $accent;
+      background-color: #fff;
+    }
+  }
+
+  &__tel,
+  &__mail,
+  &__address {
+    color: $text;
+  }
+
+  &__text,
+  &__email {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #d7d7e8;
+  }
+
+  &__project,
+  &__textarea {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #d7d7e8;
+  }
+
+  &__input-project,
+  &__message {
+    margin-top: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #d7d7e8;
+  }
+}
