@@ -1,0 +1,42 @@
+.footer {
+  padding: 50px 0;
+  color: $wh;
+  background: $accent;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__copy {
+    text-align: center;
+    color: $gr;
+  }
+
+  &__facebook,
+  &__instagram,
+  &__github {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      svg {
+        fill: $bl;
+      }
+    }
+  }
+}

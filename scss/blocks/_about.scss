@@ -1,0 +1,113 @@
+.about {
+  padding: 80px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0;
+
+    @include r($md) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 20px rgba(0, 0, 0, 0.22);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    @include r($lg) {
+      max-width: 360px;
+    }
+
+    @include r($md) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 460px;
+
+    @include r($xl) {
+      max-width: 400px;
+    }
+
+    @include r($lg) {
+      max-width: 330px;
+    }
+
+    @include r($md) {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text;
+  }
+
+  &__advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    @include r($md) {
+      justify-content: space-around;
+    }
+  }
+
+  &__advantage {
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+  }
+
+  &__years {
+    font-weight: 700;
+    font-size: 38px;
+
+    @include r($lg) {
+      font-size: 32px;
+    }
+  }
+
+  &__descr {
+    font-size: 16px;
+  }
+
+  &__link {
+    color: $wh;
+    background-color: $accent;
+
+    svg {
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &:hover {
+      border: 3px solid $accent;
+      color: $accent;
+      background-color: $wh;
+    }
+
+    @include r($md) {
+      margin: 0 auto;
+    }
+  }
+
+  @include r($xl) {
+    padding: 80px 0 0;
+  }
+}

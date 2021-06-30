@@ -1,0 +1,13 @@
+.header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  color: $wh;
+  background-color: $accent;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,71 @@
+.skills {
+  padding: 80px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0;
+
+    @include r($lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include r($lg) {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: $accent;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: $lite-gr;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__info {
+    max-width: 450px;
+
+    @include r($lg) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__img {
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25), 0 0 20px rgba(0, 0, 0, 0.22);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  @include r($xl) {
+    padding: 80px 0 0;
+  }
+}
