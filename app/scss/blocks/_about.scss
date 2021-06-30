@@ -20,8 +20,9 @@
 
   &__text {
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
+    color: $text;
   }
 
   &__advantages {
@@ -41,9 +42,15 @@
     font-size: 38px;
   }
 
-  &__btn {
+  &__link {
     color: $wh;
     background-color: $accent;
+
+    svg {
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+    }
 
     &:hover {
       border: 3px solid $accent;

@@ -39,8 +39,11 @@ body {
 }
 
 .btn {
+  display: inline-flex;
+  justify-content: center;
   padding: 20px 5px;
-  width: 150px;
+  max-width: 170px;
+  width: 100%;
   border: 3px solid transparent;
   border-radius: 10px;
   font-size: 16px;
