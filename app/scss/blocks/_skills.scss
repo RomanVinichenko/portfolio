@@ -6,11 +6,20 @@
     align-items: center;
     justify-content: space-around;
     padding: 80px 0;
+
+    @include r($lg) {
+      flex-direction: column;
+    }
   }
 
   &__box {
     &:not(:last-child) {
       margin-bottom: 20px;
+    }
+
+    @include r($lg) {
+      width: 100%;
+      max-width: 300px;
     }
   }
 
@@ -38,6 +47,11 @@
 
   &__info {
     max-width: 450px;
+
+    @include r($lg) {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 
   &__img {
@@ -49,5 +63,9 @@
     &:hover {
       transform: scale(1.02);
     }
+  }
+
+  @include r($xl) {
+    padding: 80px 0 0;
   }
 }

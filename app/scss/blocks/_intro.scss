@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   color: $wh;
   background-color: $accent;
 
@@ -7,6 +8,14 @@
     align-items: center;
     justify-content: center;
     min-height: 760px;
+
+    @include r($xl) {
+      min-height: 660px;
+    }
+
+    @include r($md) {
+      justify-content: left;
+    }
   }
 
   &__info {
@@ -14,6 +23,10 @@
     flex-direction: column;
     width: 100%;
     max-width: 500px;
+
+    @include r($md) {
+      z-index: 5;
+    }
   }
 
   &__title {
@@ -44,5 +57,25 @@
 
   &__img {
     margin-top: auto;
+    width: 100%;
+    max-width: 800px;
+
+    @include r($xl) {
+      max-width: 600px;
+    }
+
+    @include r($lg) {
+      max-width: 550px;
+    }
+
+    @include r($md) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      opacity: 0.5;
+      width: 100%;
+      max-width: 500px;
+    }
   }
 }
