@@ -25,9 +25,18 @@
   &__facebook,
   &__instagram,
   &__github {
-    margin-right: 10px;
     width: 30px;
     height: 30px;
     cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      svg {
+        fill: $bl;
+      }
+    }
   }
 }
