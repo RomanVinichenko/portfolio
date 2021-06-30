@@ -16,7 +16,7 @@ const swiper = new Swiper('.portfolio__list', {
   },
 });
 
-$('.menu a, .footer__inner a').on('click', function (event) {
+$('.menu a, .intro a, .footer__inner a').on('click', function (event) {
   event.preventDefault();
   var id = $(this).attr('href'),
     top = $(id).offset().top;

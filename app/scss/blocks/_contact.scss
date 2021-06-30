@@ -25,30 +25,37 @@
       width: 30px;
       height: 30px;
       background-size: cover;
+      transition: transform 0.2s;
+    }
+
+    &:hover::before {
+      transform: scale(1.2);
     }
   }
 
   &__block--phone {
     &::before {
-      background-image: url("../../images/phone.svg");
+      background-image: url("../../images/icons/phone.svg");
     }
   }
 
   &__block--mail {
     &::before {
-      background-image: url("../../images/mail.svg");
+      background-image: url("../../images/icons/mail.svg");
     }
   }
 
   &__block--location {
     &::before {
-      background-image: url("../../images/location.svg");
+      background-image: url("../../images/icons/location.svg");
     }
   }
 
   &__title {
     margin-bottom: 15px;
+    font-weight: 700;
     font-size: 25px;
+    color: $accent;
   }
 
   &__form {
@@ -68,7 +75,7 @@
     width: 250px;
     outline: none;
     border: none;
-    background-color: #d7d7e8;
+    background-color: $input;
   }
 
   &__textarea {
@@ -80,13 +87,24 @@
   }
 
   &__btn {
-    color: #fff;
+    color: $wh;
     background-color: $accent;
+
+    svg {
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s;
+    }
 
     &:hover {
       border: 3px solid $accent;
       color: $accent;
-      background-color: #fff;
+      background-color: $wh;
+
+      svg {
+        transform: translateX(5px);
+      }
     }
   }
 
@@ -100,7 +118,8 @@
   &__email {
     padding: 20px;
     border-radius: 5px;
-    background-color: #d7d7e8;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), 2px 2px 5px rgba(0, 0, 0, 0.22);
+    background-color: $input;
   }
 
   &__project,
@@ -109,7 +128,8 @@
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 5px;
-    background-color: #d7d7e8;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), 2px 2px 5px rgba(0, 0, 0, 0.22);
+    background-color: $input;
   }
 
   &__input-project,
@@ -118,6 +138,6 @@
     width: 100%;
     outline: none;
     border: none;
-    background-color: #d7d7e8;
+    background-color: $input;
   }
 }

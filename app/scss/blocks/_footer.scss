@@ -6,68 +6,28 @@
   &__inner {
     display: flex;
     justify-content: space-around;
-  }
-
-  &__head {
-    width: 100%;
-    max-width: 200px;
+    margin-bottom: 50px;
   }
 
   &__logo {
     margin-bottom: 15px;
   }
 
-  &__items {
-    display: flex;
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
-  }
-
-  &__link {
-    font-size: 20px;
-  }
-
   &__links {
     display: flex;
   }
 
-  &__facebook {
-    &::after {
-      background-image: url("../../images/facebook.svg");
-    }
-  }
-
-  &__instagram {
-    &::after {
-      background-image: url("../../images/instagram.svg");
-    }
-  }
-
-  &__github {
-    &::after {
-      background-image: url("../../images/github.svg");
-    }
+  &__copy {
+    text-align: center;
+    color: $gr;
   }
 
   &__facebook,
   &__instagram,
   &__github {
-    position: relative;
-    display: block;
     margin-right: 10px;
     width: 30px;
     height: 30px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      background-size: cover;
-    }
+    cursor: pointer;
   }
 }
