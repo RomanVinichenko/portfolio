@@ -16,6 +16,10 @@ body {
   display: block;
   font-weight: 700;
   font-size: 24px;
+
+  @include r($md) {
+    font-size: 20px;
+  }
 }
 
 .title {
@@ -36,6 +40,10 @@ body {
     background-color: $accent;
     transform: translateX(-50%);
   }
+
+  @include r($lg) {
+    font-size: 32px;
+  }
 }
 
 .btn {
@@ -49,11 +57,37 @@ body {
   font-size: 18px;
   transition: color 0.3s, background-color 0.3s, border 0.3s;
   cursor: pointer;
+
+  @include r($md) {
+    padding: 15px 5px;
+  }
 }
 
 .nav__items {
   display: flex;
   justify-content: space-between;
+
+  @include r($md) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    padding: 80px 0 15px;
+    border-bottom: 2px solid $wh;
+    text-align: center;
+    color: $wh;
+    background-color: $accent;
+    transform: translateY(-200%);
+    transition: all 0.5s;
+  }
+}
+
+.nav__items--active {
+  @include r($md) {
+    z-index: -1;
+    transform: translateY(0);
+  }
 }
 
 .nav__item {
@@ -63,6 +97,10 @@ body {
 
   &:not(:last-child) {
     margin-right: 20px;
+
+    @include r($md) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -84,4 +122,16 @@ body {
   &:hover::before {
     width: 100%;
   }
+}
+
+.sr-only {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
 }

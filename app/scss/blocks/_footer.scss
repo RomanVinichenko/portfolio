@@ -22,6 +22,13 @@
     color: $gr;
   }
 
+  &__head {
+    @include r($md) {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+
   &__facebook,
   &__instagram,
   &__github {
