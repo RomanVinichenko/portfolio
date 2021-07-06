@@ -7,9 +7,9 @@
     justify-content: space-around;
     padding: 80px 0;
 
-    @include r($lg) {
-      padding: 15px 0;
-    }
+      @include r($lg) {
+        padding: 15px 0;
+      }
 
     @include r($md) {
       flex-direction: column;
