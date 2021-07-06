@@ -1,4 +1,4 @@
-# Myself Portfolio
+# Portfolio
 
 For quick view: https://romanvinichenko.github.io/portfolio/
 
