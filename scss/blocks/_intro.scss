@@ -1,6 +1,4 @@
 .intro {
-  position: relative;
-  overflow: hidden;
   color: $wh;
   background-color: $accent;
 
@@ -8,24 +6,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-
-    @include r($md) {
-      justify-content: left;
-      min-height: 600px;
-    }
+    min-height: 760px;
   }
 
   &__info {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 450px;
-
-    @include r($md) {
-      z-index: 5;
-      margin-top: 50px;
-    }
+    max-width: 500px;
   }
 
   &__title {
@@ -43,7 +31,8 @@
     margin-bottom: 15px;
   }
 
-  &__link {
+  &__btn {
+    max-width: 130px;
     color: $bl;
     background-color: $wh;
 
@@ -52,35 +41,9 @@
       color: $wh;
       background-color: $accent;
     }
-
-    @include r($md) {
-      padding: 15px;
-    }
-
-    @include r($sm) {
-      border: 3px solid $wh;
-      color: $wh;
-      background-color: transparent;
-    }
   }
 
   &__img {
     margin-top: auto;
-    width: 100%;
-    max-width: 800px;
-
-    @include r($md) {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      opacity: 0.5;
-      width: 100%;
-      max-width: 500px;
-    }
-
-    @include r($sm) {
-      right: -100px;
-    }
   }
 }
